@@ -1,7 +1,4 @@
-import depth
-import craze
-html.behaviour("rude"l
-Print [”Eroor_786")
+TERI BARISHEIN
 # 💼 Dip Tarafder — Resume Website
 
 A modern and responsive personal resume website built using **HTML5** and **CSS3**.
