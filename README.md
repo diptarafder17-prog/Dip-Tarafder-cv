@@ -40,11 +40,10 @@ This project showcases:
 ## 📂 Project Structure
 
 ```
-resume-project/
+Dip Tarafder/cv/doc/
 │
 ├── index.html
 ├── README.md
-└── assets/
 ```
 
 ---
