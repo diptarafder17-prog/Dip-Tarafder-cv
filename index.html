@@ -1,599 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Dip Tarafder | Portfolio</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
 body{
-
-font-family:Arial;
-
-background:
-linear-gradient(
--45deg,
-#0f172a,
-#1e293b,
-#0b1220,
-#172554
-);
-
-background-size:400% 400%;
-
-animation:bg 15s infinite;
-
-color:white;
-
-overflow-x:hidden;
-
+  font-family:Arial, sans-serif;
+  background:linear-gradient(-45deg,#0f172a,#1e293b,#0b1220,#172554);
+  background-size:400% 400%;
+  animation:bg 15s infinite;
+  color:white;
+  overflow-x:hidden;
 }
+@keyframes bg{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 
-@keyframes bg{
-
-0%{background-position:0% 50%}
-
-50%{background-position:100% 50%}
-
-100%{background-position:0% 50%}
-
-}
-
-header{
-
-min-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-flex-direction:column;
-
-text-align:center;
-
-padding:30px;
-
-}
-
+header{min-height:100vh;display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center;padding:30px;}
 .avatar{
-
-width:140px;
-
-height:140px;
-
-border-radius:50%;
-
-background:
-linear-gradient(
-135deg,
-#2563eb,
-#38bdf8
-);
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:58px;
-
-margin-bottom:20px;
-
-animation:float 3s infinite;
-
+  width:160px;height:160px;border-radius:50%;
+  background:linear-gradient(135deg,#1e293b,#0f172a);
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;margin-bottom:20px;
+  animation:float 3s infinite;
+  box-shadow:0 0 25px rgba(56,189,248,.4);
 }
+.avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%;}
+@keyframes float{50%{transform:translateY(-10px);}}
+h1{font-size:60px;letter-spacing:5px;}
+.subtitle{margin-top:10px;font-size:20px;opacity:.85;}
+.btn{margin-top:25px;padding:14px 32px;background:#2563eb;color:white;text-decoration:none;border-radius:40px;transition:.3s;}
+.btn:hover{transform:scale(1.08);}
+nav{position:sticky;top:0;backdrop-filter:blur(20px);padding:18px;display:flex;justify-content:center;gap:25px;z-index:99;}
+nav a{color:white;text-decoration:none;}
+.container{max-width:1200px;margin:auto;padding:40px 20px;}
+.card{background:rgba(255,255,255,.08);backdrop-filter:blur(16px);border-radius:24px;padding:30px;margin-bottom:25px;animation:fade .8s;}
+@keyframes fade{from{opacity:0;transform:translateY(30px);}}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.skill{padding:16px;border-radius:18px;background:rgba(255,255,255,.06);}
+.bar{height:8px;margin-top:10px;border-radius:99px;background:#333;overflow:hidden;}
+.fill{height:100%;background:#3b82f6;animation:grow 2s;}
+@keyframes grow{from{width:0;}}
+footer{text-align:center;padding:50px;}
 
-@keyframes float{
-
-50%{
-transform:
-translateY(-10px);
+/* Personal Details */
+.details-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:15px;}
+.details-btns button{
+  padding:10px 20px;border:none;border-radius:20px;
+  background:#2563eb;color:white;cursor:pointer;transition:.3s;
+  box-shadow:0 0 12px rgba(37,99,235,.5);
 }
-
-}
-
-h1{
-
-font-size:60px;
-
-letter-spacing:5px;
-
-}
-
-.subtitle{
-
-margin-top:10px;
-
-font-size:20px;
-
-opacity:.85;
-
-}
-
-.btn{
-
-margin-top:25px;
-
-padding:14px 32px;
-
-background:#2563eb;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:40px;
-
-transition:.3s;
-
-}
-
-.btn:hover{
-
-transform:scale(1.08);
-
-}
-
-nav{
-
-position:sticky;
-
-top:0;
-
-backdrop-filter:blur(20px);
-
-padding:18px;
-
-display:flex;
-
-justify-content:center;
-
-gap:25px;
-
-z-index:99;
-
-}
-
-nav a{
-
-color:white;
-
-text-decoration:none;
-
-}
-
-.container{
-
-max-width:1200px;
-
-margin:auto;
-
-padding:40px 20px;
-
-}
-
-.card{
-
-background:
-rgba(255,255,255,.08);
-
-backdrop-filter:blur(16px);
-
-border-radius:24px;
-
-padding:30px;
-
-margin-bottom:25px;
-
-animation:
-fade .8s;
-
-}
-
-@keyframes fade{
-
-from{
-
-opacity:0;
-
-transform:
-translateY(30px);
-
-}
-
-}
-
-.skills{
-
-display:grid;
-
-grid-template-columns:
-1fr 1fr;
-
-gap:20px;
-
-}
-
-.skill{
-
-padding:16px;
-
-border-radius:18px;
-
-background:
-rgba(255,255,255,.06);
-
-}
-
-.bar{
-
-height:8px;
-
-margin-top:10px;
-
-border-radius:99px;
-
-background:#333;
-
-overflow:hidden;
-
-}
-
-.fill{
-
-height:100%;
-
-background:#3b82f6;
-
-animation:grow 2s;
-
-}
-
-@keyframes grow{
-
-from{
-width:0;
-}
-
-}
-
-footer{
-
-text-align:center;
-
-padding:50px;
-
-}
+.details-btns button:hover{transform:scale(1.05);background:#38bdf8;}
+.detail-box{margin-top:15px;padding:12px;border-radius:12px;background:rgba(255,255,255,.06);display:none;}
 
 /* Video */
-
-.video-btn{
-
-position:fixed;
-
-right:30px;
-
-bottom:30px;
-
-width:80px;
-
-height:80px;
-
-border-radius:50%;
-
-background:red;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-cursor:pointer;
-
-font-size:30px;
-
-box-shadow:
-0 20px 40px
-rgba(255,0,0,.4);
-
-}
-
-.video{
-
-display:none;
-
-position:fixed;
-
-right:30px;
-
-bottom:130px;
-
-width:420px;
-
-max-width:92%;
-
-background:#111;
-
-border-radius:20px;
-
-overflow:hidden;
-
-}
-
-.video iframe{
-
-width:100%;
-
-height:240px;
-
-border:none;
-
-}
-
-.close{
-
-padding:10px;
-
-text-align:right;
-
-}
-
-.close button{
-
-background:none;
-
-color:white;
-
-border:none;
-
-font-size:24px;
-
-}
+.video-btn{position:fixed;right:30px;bottom:30px;width:80px;height:80px;border-radius:50%;background:red;display:flex;justify-content:center;align-items:center;cursor:pointer;font-size:30px;box-shadow:0 20px 40px rgba(255,0,0,.4);}
+.video{display:none;position:fixed;right:30px;bottom:130px;width:420px;max-width:92%;background:#111;border-radius:20px;overflow:hidden;}
+.video iframe{width:100%;height:240px;border:none;}
+.close{padding:10px;text-align:right;}
+.close button{background:none;color:white;border:none;font-size:24px;}
 
 @media(max-width:700px){
-
-h1{
-font-size:40px;
+  h1{font-size:40px;}
+  .skills{grid-template-columns:1fr;}
 }
-
-.skills{
-grid-template-columns:1fr;
-}
-
-}
-
 </style>
-
 </head>
-
 <body>
 
 <header>
-
-<div class="avatar">
-DT
-</div>
-
-<h1>DIP TARAFDER</h1>
-
-<div class="subtitle">
-Web Developer • Front-End Engineer
-</div>
-
-<a href="#about" class="btn">
-
-Explore Portfolio
-
-</a>
-
+  <div class="avatar">
+    <img src="https://i.postimg.cc/Cdy6pGwZ/file-00000000caa87208914980a3c297edd2.png" alt="Dip Tarafder">
+  </div>
+  <h1>DIP TARAFDER</h1>
+  <div class="subtitle">Web Developer • Front-End Engineer</div>
+  <a href="#about" class="btn">Explore Portfolio</a>
 </header>
 
 <nav>
-
-<a href="#about">About</a>
-
-<a href="#skills">Skills</a>
-
-<a href="#projects">Projects</a>
-
-<a href="#contact">Contact</a>
-
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#details">Details</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
 
-<section
-class="card"
-id="about">
-
-<h2>About Me</h2>
-
-<p>
-
-Building elegant,
-responsive,
-modern websites.
-
-</p>
-
+<section class="card" id="about">
+  <h2>About Me</h2>
+  <p>Building elegant, responsive, modern websites.</p>
 </section>
 
-<section
-class="card"
-id="skills">
-
-<h2>Skills</h2>
-
-<div class="skills">
-
-<div class="skill">
-
-HTML
-
-<div class="bar">
-
-<div
-class="fill"
-style="width:95%">
-</div>
-
-</div>
-
-</div>
-
-<div class="skill">
-
-CSS
-
-<div class="bar">
-
-<div
-class="fill"
-style="width:90%">
-</div>
-
-</div>
-
-</div>
-
-<div class="skill">
-
-JavaScript
-
-<div class="bar">
-
-<div
-class="fill"
-style="width:85%">
-</div>
-
-</div>
-
-</div>
-
-<div class="skill">
-
-React
-
-<div class="bar">
-
-<div
-class="fill"
-style="width:80%">
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+<section class="card" id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">HTML<div class="bar"><div class="fill" style="width:95%"></div></div></div>
+    <div class="skill">CSS<div class="bar"><div class="fill" style="width:90%"></div></div></div>
+    <div class="skill">JavaScript<div class="bar"><div class="fill" style="width:85%"></div></div></div>
+    <div class="skill">React<div class="bar"><div class="fill" style="width:80%"></div></div></div>
+  </div>
 </section>
 
-<section
-class="card"
-id="projects">
-
-<h2>Projects</h2>
-
-<p>
-
-Portfolio Website<br>
-Responsive Design<br>
-Frontend Projects
-
-</p>
-
+<section class="card" id="projects">
+  <h2>Projects</h2>
+  <p>Portfolio Website<br>Responsive Design<br>Frontend Projects</p>
 </section>
 
-<section
-class="card"
-id="contact">
+<section class="card" id="details">
+  <h2>Personal Details</h2>
+  <div class="details-btns">
+    <button onclick="showDetail('loc')">📍 Location</button>
+    <button onclick="showDetail('home')">🏠 Home</button>
+    <button onclick="showDetail('dob')">🎂 Birthday</button>
+    <button onclick="showDetail('status')">💗 Status</button>
+    <button onclick="showDetail('gender')">⚭ Gender</button>
+    <button onclick="showDetail('lang')">💬 Languages</button>
+  </div>
+  <div id="loc" class="detail-box">Nagarpur, Dhaka, Bangladesh</div>
+  <div id="home" class="detail-box">Tangail</div>
+  <div id="dob" class="detail-box">18 October 2005</div>
+  <div id="status" class="detail-box">Single</div>
+  <div id="gender" class="detail-box">Male</div>
+  <div id="lang" class="detail-box">American English · Bangladeshi English · Hindi · Urdu</div>
+</section>
 
-<h2>Contact</h2>
-
-<p>
-
-Email:
-diptarafder17@gmail.com
-
-</p>
-
+<section class="card" id="contact">
+  <h2>Contact</h2>
+  <p>Email: diptarafder17@gmail.com</p>
 </section>
 
 </div>
 
-<footer>
+<footer>© 2026 Dip Tarafder</footer>
 
-© 2026 Dip Tarafder
-
-</footer>
-
-<div
-class="video-btn"
-onclick="toggleVideo()">
-
-▶
-
-</div>
-
-<div
-class="video"
-id="video">
-
-<div class="close">
-
-<button
-onclick="toggleVideo()">
-
-✕
-
-</button>
-
-</div>
-
-<iframe
-src="https://www.youtube.com/embed/UyoDdroSXXs"
-allowfullscreen>
-
-</iframe>
-
+<div class="video-btn" onclick="toggleVideo()">▶</div>
+<div class="video" id="video">
+  <div class="close"><button onclick="toggleVideo()">✕</button></div>
+  <iframe src="https://www.youtube.com/embed/UyoDdroSXXs" allowfullscreen></iframe>
 </div>
 
 <script>
-
 function toggleVideo(){
-
-const v =
-document
-.getElementById(
-"video"
-);
-
-v.style.display=
-v.style.display
-==="block"
-?
-"none"
-:
-"block";
-
+  const v=document.getElementById("video");
+  v.style.display=v.style.display==="block"?"none":"block";
 }
-
+function showDetail(id){
+  document.querySelectorAll('.detail-box').forEach(el=>el.style.display="none");
+  document.getElementById(id).style.display="block";
+}
 </script>
 
 </body>
