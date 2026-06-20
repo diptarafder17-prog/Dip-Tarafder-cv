@@ -1,103 +1,102 @@
-TERI BARISHEIN
-<!-- Tells search engines this is the "official" original URL -->
-<link rel="canonical" href="https://youtu.be/RA5YzeKn59M?si=UBoRfotw6uYc4TrG">
+# 🚀 Dip Tarafder — Animated Portfolio Website
 
-<!-- Tells the browser to load YouTube faster in the background -->
-<link rel="preconnect" href="https://youtu.be">
-<a href="https://youtu.be/RA5YzeKn59M?si=UBoRfotw6uYc4TrG" target="_blank" rel="noopener noreferrer">Watch YouTube Video</a>
-# 💼 Dip Tarafder — Resume Website
-
-A modern and responsive personal resume website built using **HTML5** and **CSS3**.
-
-## 📌 Overview
-
-This project showcases:
-
-- Professional Summary
-- Technical Skills
-- Projects & Experience
-- Education
-- Responsive Layout
-- Clean Modern UI
+A modern, animated single-page portfolio and resume website built with pure HTML, CSS, and JavaScript.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-✔ Responsive Design  
-✔ Sticky Navigation  
-✔ Modern Card Layout  
-✔ Mobile Friendly  
-✔ Professional Resume Style  
+- Modern Hero Section
+- Animated Gradient Background
+- Responsive Design
+- Smooth Navigation
+- Glassmorphism UI
+- Skill Progress Animation
+- Floating YouTube Video Resume
+- Mobile Friendly
+- Interactive Hover Effects
+- Clean Portfolio Layout
 
 ---
 
-## 🛠 Technologies Used
+## 🛠 Built With
 
 - HTML5
 - CSS3
-- Responsive Web Design
+- JavaScript
 
 ---
-# Personal Portfolio & Digital CV
 
-Welcome to the repository for my personal portfolio and digital CV. This project showcases my skills as a Front-End Web Developer, featuring a clean, semantic, and fully responsive design.
+## 📁 Project Structure
 
-## 🚀 Live Demo
-You can view the live version of this portfolio here: 
-[diptarafder17-prog.github.io](https://diptarafder17-prog.github.io)
-
-## 🛠️ Technologies Used
-* **HTML5:** Semantic structure and accessibility.
-* **CSS3:** Custom styling, Grid/Flexbox layouts, and responsive design.
-* **JavaScript (ES6+):** Interactive elements and DOM manipulation.
-* **Git & GitHub:** Version control and continuous deployment (GitHub Pages).
-
-## ✨ Features
-* **Semantic HTML:** Built with modern web standards for SEO and accessibility.
-* **Fully Responsive:** Adapts seamlessly to desktop, tablet, and mobile screens.
-* **Clean UI/UX:** A minimalist and professional layout to highlight projects and experience.
-
-## 💻 Getting Started
-To view this project locally on your machine:
-
-1. **Clone the repository:**
 ```bash
-   git clone [https://github.com/diptarafder17-prog/your-repo-name.git](https://github.com/diptarafder17-prog/your-repo-name.git)
-## 📂 Project Structure
-
-```
-Dip Tarafder/cv/doc/
+project/
 │
 ├── index.html
-├── README.md
+└── README.md
 ```
 
 ---
 
 ## ▶ Run Locally
 
-1. Download the project
-2. Open the folder
-3. Double-click `index.html`
-
-OR
+Clone or download:
 
 ```bash
 git clone <repository-url>
-cd resume-project
-open index.html
 ```
+
+Open:
+
+```bash
+index.html
+```
+
+Or simply double-click:
+
+```text
+index.html
+```
+
+---
+
+## 🎬 Video Resume
+
+Embedded video player included.
+
+Update video:
+
+```html
+https://www.youtube.com/embed/UyoDdroSXXs
+```
+
+Replace with your own YouTube video ID.
+
+---
+
+## 📱 Responsive
+
+Optimized for:
+
+- Desktop
+- Tablet
+- Mobile
 
 ---
 
 ## 👨‍💻 Author
 
-**Dip Tarafder**  
+Dip Tarafder
+
 Web Developer • Front-End Engineer
+
+Email:
+diptarafder17@gmail.com
 
 ---
 
 ## 📄 License
 
-This project is open for personal customization and learning.
+Open for personal learning and customization.
+
+© 2026 Dip Tarafder
