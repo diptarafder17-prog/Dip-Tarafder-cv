@@ -1,141 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Dip Tarafder | Resume</title>
-
-<!-- MOVING YOUTUBE HEAD LINKS HERE -->
-<link rel="canonical" href="https://youtu.be/RA5YzeKn59M?si=UBoRfotw6uYc4TrG">
-<link rel="preconnect" href="https://youtu.be">
+<title>Dip Tarafder | Portfolio</title>
 
 <style>
-/* ... your CSS ... */
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,sans-serif;
-background:#f4f6f9;
-color:#222;
-line-height:1.7;
+
+font-family:Arial;
+
+background:
+linear-gradient(
+-45deg,
+#0f172a,
+#1e293b,
+#0b1220,
+#172554
+);
+
+background-size:400% 400%;
+
+animation:bg 15s infinite;
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%}
+
+50%{background-position:100% 50%}
+
+100%{background-position:0% 50%}
+
 }
 
 header{
-background:linear-gradient(135deg,#0f172a,#1e293b);
-color:white;
-padding:60px 20px;
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
 text-align:center;
+
+padding:30px;
+
 }
 
-header h1{
-font-size:48px;
-letter-spacing:3px;
+.avatar{
+
+width:140px;
+
+height:140px;
+
+border-radius:50%;
+
+background:
+linear-gradient(
+135deg,
+#2563eb,
+#38bdf8
+);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:58px;
+
+margin-bottom:20px;
+
+animation:float 3s infinite;
+
 }
 
-header p{
+@keyframes float{
+
+50%{
+transform:
+translateY(-10px);
+}
+
+}
+
+h1{
+
+font-size:60px;
+
+letter-spacing:5px;
+
+}
+
+.subtitle{
+
 margin-top:10px;
-font-size:18px;
-color:#cbd5e1;
+
+font-size:20px;
+
+opacity:.85;
+
 }
 
-.contact{
-margin-top:20px;
-font-size:15px;
-color:#94a3b8;
+.btn{
+
+margin-top:25px;
+
+padding:14px 32px;
+
+background:#2563eb;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:scale(1.08);
+
 }
 
 nav{
+
 position:sticky;
+
 top:0;
-background:white;
-padding:16px;
-text-align:center;
-box-shadow:0 3px 12px rgba(0,0,0,.08);
-z-index:100;
+
+backdrop-filter:blur(20px);
+
+padding:18px;
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+z-index:99;
+
 }
 
 nav a{
-text-decoration:none;
-margin:0 14px;
-color:#1e293b;
-font-weight:bold;
-}
 
-nav a:hover{
-color:#2563eb;
+color:white;
+
+text-decoration:none;
+
 }
 
 .container{
-max-width:1000px;
+
+max-width:1200px;
+
 margin:auto;
+
 padding:40px 20px;
+
 }
 
 .card{
-background:white;
-padding:28px;
-margin-bottom:30px;
-border-radius:18px;
-box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+background:
+rgba(255,255,255,.08);
+
+backdrop-filter:blur(16px);
+
+border-radius:24px;
+
+padding:30px;
+
+margin-bottom:25px;
+
+animation:
+fade .8s;
+
 }
 
-h2{
-color:#0f172a;
-margin-bottom:18px;
-border-left:5px solid #2563eb;
-padding-left:12px;
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:
+translateY(30px);
+
+}
+
 }
 
 .skills{
+
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:20px;
+
 }
 
 .skill{
-padding:14px;
-background:#f8fafc;
-border-radius:10px;
+
+padding:16px;
+
+border-radius:18px;
+
+background:
+rgba(255,255,255,.06);
+
 }
 
-.job{
-margin-bottom:25px;
+.bar{
+
+height:8px;
+
+margin-top:10px;
+
+border-radius:99px;
+
+background:#333;
+
+overflow:hidden;
+
 }
 
-.job h3{
-color:#111827;
-margin-bottom:6px;
+.fill{
+
+height:100%;
+
+background:#3b82f6;
+
+animation:grow 2s;
+
 }
 
-.meta{
-color:#64748b;
-margin-bottom:12px;
+@keyframes grow{
+
+from{
+width:0;
 }
 
-ul{
-padding-left:20px;
-}
-
-li{
-margin-bottom:8px;
 }
 
 footer{
-background:#0f172a;
-color:white;
-padding:25px;
+
 text-align:center;
+
+padding:50px;
+
+}
+
+/* Video */
+
+.video-btn{
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+width:80px;
+
+height:80px;
+
+border-radius:50%;
+
+background:red;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+cursor:pointer;
+
+font-size:30px;
+
+box-shadow:
+0 20px 40px
+rgba(255,0,0,.4);
+
+}
+
+.video{
+
+display:none;
+
+position:fixed;
+
+right:30px;
+
+bottom:130px;
+
+width:420px;
+
+max-width:92%;
+
+background:#111;
+
+border-radius:20px;
+
+overflow:hidden;
+
+}
+
+.video iframe{
+
+width:100%;
+
+height:240px;
+
+border:none;
+
+}
+
+.close{
+
+padding:10px;
+
+text-align:right;
+
+}
+
+.close button{
+
+background:none;
+
+color:white;
+
+border:none;
+
+font-size:24px;
+
 }
 
 @media(max-width:700px){
 
-header h1{
-font-size:34px;
+h1{
+font-size:40px;
 }
 
 .skills{
@@ -143,6 +375,7 @@ grid-template-columns:1fr;
 }
 
 }
+
 </style>
 
 </head>
@@ -151,148 +384,154 @@ grid-template-columns:1fr;
 
 <header>
 
+<div class="avatar">
+DT
+</div>
+
 <h1>DIP TARAFDER</h1>
 
-<p>Web Developer • Front-End Engineer</p>
-
-<div class="contact">
-Tangail, Bangladesh • Portfolio Available
+<div class="subtitle">
+Web Developer • Front-End Engineer
 </div>
+
+<a href="#about" class="btn">
+
+Explore Portfolio
+
+</a>
 
 </header>
 
 <nav>
-<a href="#summary">Summary</a>
+
+<a href="#about">About</a>
+
 <a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#education">Education</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
 </nav>
 
 <div class="container">
 
-<section class="card" id="summary">
+<section
+class="card"
+id="about">
 
-<h2>Summary</h2>
+<h2>About Me</h2>
 
 <p>
-Passionate Web Developer focused on building modern,
-responsive and user-friendly websites and applications.
-Experienced in creating clean interfaces and maintaining
-efficient code with strong attention to detail.
+
+Building elegant,
+responsive,
+modern websites.
+
 </p>
 
 </section>
 
-<section class="card" id="skills">
+<section
+class="card"
+id="skills">
 
-<h2>Technical Skills</h2>
-  <div style="text-align: center; margin-top: 25px;">
-  <a href="wwe.xnxx.com" target="_blank" rel="noopener noreferrer" style="background: #e52d27; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    ▶ Watch Video Resume
-  </a>
-  </div><!-- Tells search engines this is the "official" original URL -->
-<link rel="canonical" href="wwe.xnxx.com">
-
-<!-- Tells the browser to load YouTube faster in the background -->
-<link rel="preconnect" href="https://chrome/browser.be">
+<h2>Skills</h2>
 
 <div class="skills">
 
 <div class="skill">
-<b>Languages</b><br>
-HTML5, CSS3, JavaScript
-</div>
-  <div style="text-align: center; margin-top: 25px;">
-  <h6>Set your link here</h6>
-<a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" style="background: #e52d27; color:ahrefwhite; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.9);">
-    ▶ Watch Video Resume
-  </a>
-  </div>
 
-<div class="skill">
-<b>Frameworks</b><br>
-React.js, Node.js,
+HTML
+
+<div class="bar">
+
+<div
+class="fill"
+style="width:95%">
 </div>
 
-<div class="skill">
-<b>Tools</b><br>
-Git, GitHub, VS Code
+</div>
+
 </div>
 
 <div class="skill">
-<b>Soft Skills</b><br>
-Problem Solving, Teamwork
+
+CSS
+
+<div class="bar">
+
+<div
+class="fill"
+style="width:90%">
 </div>
 
 </div>
-  <!-- Tells search engines this is the "official" original URL -->
-<link rel="canonical" href="https://youtu.be/RA5YzeKn59M?si=UBoRfotw6uYc4TrG">
-
-<!-- Tells the browser to load YouTube faster in the background -->
-<link rel="preconnect" href="https://youtu.be">
-  <a href="https://youtu.be/RA5YzeKn59M?si=UBoRfotw6uYc4TrG" target="_blank" rel="noopener noreferrer">Watch YouTube Video</a>
-
-</section>
-
-<section class="card" id="experience">
-
-<h2>Projects & Experience</h2>
-
-<div class="job">
-
-<h3>➤Portfolio</h3>
-
-<div class="meta">
-Lead Developer
-</div>
-
-<ul>
-
-<li>Designed and built responsive websites.</li>
-
-<li>Optimized performance and accessibility.</li>
-
-<li>Maintained projects using GitHUB.</li>
-
-</ul>
 
 </div>
 
-<div class="job">
+<div class="skill">
 
-<h3>Freelance Web Developer</h3>
+JavaScript
 
-<div class="meta">
-Remote | Present
+<div class="bar">
+
+<div
+class="fill"
+style="width:85%">
 </div>
 
-<ul>
+</div>
 
-<li>Built custom web interfaces.</li>
+</div>
 
-<li>Improved speed and responsiveness.</li>
+<div class="skill">
 
-<li>Debugged and maintained production code.</li>
+React
 
-</ul>
+<div class="bar">
+
+<div
+class="fill"
+style="width:80%">
+</div>
+
+</div>
+
+</div>
 
 </div>
 
 </section>
 
-<section class="card" id="education">
+<section
+class="card"
+id="projects">
 
-<h2>Education</h2>
+<h2>Projects</h2>
 
-<div class="job">
+<p>
 
-<h3>Computer Science / IT</h3>
+Portfolio Website<br>
+Responsive Design<br>
+Frontend Projects
 
-<div class="meta">
-HABHIT_INSTITUTE_OF_TECH.
-</div>
+</p>
 
-</div>
+</section>
+
+<section
+class="card"
+id="contact">
+
+<h2>Contact</h2>
+
+<p>
+
+Email:
+diptarafder17@gmail.com
+
+</p>
 
 </section>
 
@@ -300,9 +539,62 @@ HABHIT_INSTITUTE_OF_TECH.
 
 <footer>
 
-© 2026 Dip Tarafder — Resume
+© 2026 Dip Tarafder
 
 </footer>
+
+<div
+class="video-btn"
+onclick="toggleVideo()">
+
+▶
+
+</div>
+
+<div
+class="video"
+id="video">
+
+<div class="close">
+
+<button
+onclick="toggleVideo()">
+
+✕
+
+</button>
+
+</div>
+
+<iframe
+src="https://www.youtube.com/embed/UyoDdroSXXs"
+allowfullscreen>
+
+</iframe>
+
+</div>
+
+<script>
+
+function toggleVideo(){
+
+const v =
+document
+.getElementById(
+"video"
+);
+
+v.style.display=
+v.style.display
+==="block"
+?
+"none"
+:
+"block";
+
+}
+
+</script>
 
 </body>
 </html>
